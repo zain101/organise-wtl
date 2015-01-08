@@ -1,5 +1,5 @@
 $('#search').keyup(function () {
-	$.getJSON('data.json', function (data) {
+	$.getJSON('javascript/data.json', function (data) {
 		//var info= a.resoponseText;
 		//console.log(info);
 		var searchFeild= $('#search').val();

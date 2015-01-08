@@ -44,7 +44,7 @@
             width: 100%;
             height: 525px;
             clear: none;
-            background: url(/assets/images/footer_back.gif);
+            background: url(../images/footer_back.gif);
             margin-top: 0px;
             padding: 1ex;
 			border-radius: 1em;
@@ -56,4 +56,4 @@
             border-bottom-style: ridge;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 80px;
-        }
+        }			

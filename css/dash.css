@@ -35,14 +35,13 @@ nav#top-menu {
     border-bottom: #FFFFFF solid 10px;
 }
 .circular img {
-    width: 25%;
-    height: 25%;
+    width: 200px;
+    height: 200px;
     border-radius: 1em;
     -webkit-border-radius: 250px;
     -moz-border-radius: 250px;
     margin: 10;
-    background: url(/assets/images/zain.jpg) no-repeat;
-	border-bottom: #5C85FF solid 5px;
+    background: url(../images/zain.jpg) no-repeat;
 }
 
 /*.con{
