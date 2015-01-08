@@ -1,0 +1,241 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="dash.css" />
+	<link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
+	<script src="lib/sweet-alert.min.js"></script> 
+
+	<style>
+		
+		
+		#my-map {
+			width: 400px;
+			height: 400px;
+			margin: 5em auto;
+			border: 10px solid red;
+			
+		}
+		.about{
+			color: #fff;
+			position: absolute;
+			top: 240px;
+			left: 80px;
+			font-family: sans-serif;
+			font-size: 1.5em;
+			width: 80%;
+			height: 20em;
+		}
+		div.levitate {
+			width: 55%;
+			margin: 20px auto;
+			height: 30em;
+			background-color: #5C85FF;
+		}
+		.levitate {
+			-webkit-animation: fadeInDown 3s 1, levitate 3s infinite;
+			-moz-animation: fadeInDown 3s 1, levitate 3s infinite;
+		}
+		@-webkit-keyframes fadeInDown {
+			0% {
+				-webkit-transform: translateY(-50px);
+				opacity: 0;
+			}
+			100% {
+				-webkit-transform: translateY(10px);
+				opacity: 1;
+			}
+		}
+		@-moz-keyframes fadeInDown {
+			0% {
+				-moz-transform: translateY(-50px);
+				opacity: 0;
+			}
+			100% {
+				-moz-transform: translateY(10px);
+				opacity: 1;
+			}
+		}
+		@-webkit-keyframes levitate {
+			0% {
+				-webkit-transform: translateY(-5px);
+			}
+			50% {
+				-webkit-transform: translateY(0px);
+			}
+			100% {
+				-webkit-transform: translateY(-5px);
+			}
+		}
+		@-moz-keyframes levitate {
+			0% {
+				-moz-transform: translateY(-5px);
+			}
+			50% {
+				-moz-transform: translateY(3px);
+			}
+			100% {
+				-moz-transform: translateY(-5px);
+			}
+		}
+		img  {
+			
+			
+			border-radius: 50% 50% 50% 50%;
+			width: 100px;
+			height: 100px;
+		}
+		.image{  
+				
+				display: block;
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				top: 60px;
+				left:230;
+				float: left;
+					
+		}
+		.image1{
+				float: right;
+				display: block;
+				position: absolute;
+				top: 60px;
+				left: 380px;
+				width: 300px;
+				height: 300px;
+						
+		}
+		.line{
+			width: 70%;
+			height: 5px;
+			position: relative;
+			background-color: #fff;
+			top: 130px;
+			left: 130px;
+			display: block;
+			float: center;
+			border-radius: 3px;
+				
+		}
+		span {
+			display: block;
+			width: 900px;
+			height: 0;
+			background: rgba(0, 0, 0, 0.5);
+			box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+			margin: 0 auto;
+			position: relative;
+			top: 30em;
+			border-radius: 50%;
+		}
+		.shadow {
+			-webkit-animation: shadow 3s infinite;
+			-moz-animation: shadow 3s infinite;
+		}
+		@-webkit-keyframes shadow {
+			0% {
+				width: 350px;
+				margin-top: -30px;
+			}
+			50% {
+				width: 400px;
+				margin-top: -35px;
+			}
+			100% {
+				width: 350px;
+				margin-top: -30px;
+			}
+		}
+		@-moz-keyframes shadow {
+			0% {
+				width: 55px;
+				height: 10px;
+				-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+			}
+			50% {
+				width: 67px;
+				-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.8);
+			}
+			100% {
+				width: 55px;
+				height: 10px;
+				-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div style="background-color : #5C85FF;  margin: 0; ">
+
+		<div style="background-color : #5C85FF; font-size: 25px;  max-height: 200px; padding:0">
+
+			<h1 style="text-align: center ;color : #FFFFFF ;font-family: tahoma; margin: 0;"> <em><b>About</b></em></h1>
+		</div>
+
+		<nav id="top-menu">
+			<ul>
+				<li> <a href="dashboard.html">Home</a> 
+				</li>
+				<li> <a href="">Add Event</a> 
+				</li>
+				<li> <a href="">Schedule</a> 
+				</li>
+
+				<li> <a href="about.html">About</a> 
+				</li>
+
+				<li> <a href="contact.html" >Contact</a> 
+				</li>
+	
+				<li> <a href="profile.html" >Profiles</a> 
+				</li>
+				<li> <a href="dashboard.html" onclick="mycon(); return false">Logout</a> 
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+
+	
+
+
+
+	<div class="levitate">
+		
+			<h1 style="color: #fff ;text-align: center ; ">  Authors </h1>
+			<div class="image"><img src="zain.jpg" /> </div>
+			<div class="image1"><img src="nouman.jpg"  /></div>
+			<div class="line"></div>
+			<span class="shadow"></span>
+			<div class="about">
+				<p>We are small team of geek&apos;s highly focused on building compelling web-based solution,
+					we belive in learning by working. This project was a learning experience to us.  
+					if you find any technical problems feel free to <a href="contact.html" style="cursor: pointer;">Contact </a> us and we will respond soon.  </p>
+			</div>
+		
+	</div>
+
+	<script>
+		function mycon(){
+			
+			swal({   title: "Are you sure?",
+				  text: "You will be logged out !",
+				  type: "warning",   
+				  showCancelButton: true,
+				  confirmButtonColor: "#DD6B55",
+				  confirmButtonText: "Yes, logout!",
+				  closeOnConfirm: false },
+				 function(){
+				window.location.href = "login.html";
+					 });
+				
+		}
+		
+		</script>
+</body>
+
+</html>

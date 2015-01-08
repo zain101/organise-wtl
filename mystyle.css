@@ -1,0 +1,125 @@
+body {
+	background: #DAD7C7;
+}
+#searchArea {
+	background: #5C85FF;
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+	height: 8em;
+	color: #fff;
+	font-weight: 900;
+	border-radius: 10px 10px 0 0;
+	padding: 10px;
+}
+#searchArea label {
+	font: bold 1.8em Arial;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	color: #A61C1C;
+}
+#searchArea p {
+	font: 1em;
+	line-height: 2em;
+	padding-bottom: 5px;
+	margin: 0 auto;
+}
+#searchArea input {
+	border-radius: 50px;
+	width: 80%;
+	text-align: center;
+	height: 25%;
+	
+}
+#searchArea input:onfocus{
+	border-color: red;
+}
+#update {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	width: 81%;
+	margin: 0 auto;
+	color: #fff;
+	background: #5C85FF;
+	position: relative;
+	top: 25px;
+}
+#update ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#update ul li {
+	width: 96.4%;
+	padding: 0 20px 5px 20px;
+	border-bottom: 5px solid #fff;
+	overflow: hidden;
+	-webkit-animation: myanim 2s;
+	-moz-animation: myanim 2s;
+	-o-animation: myanim 2s;
+	-animation: myanim 2s;
+
+}
+
+#update  li:hover  img{
+	border: 2px solid #fff;
+	background: #0066FF;
+	overflow: visible;
+	height: 20em;
+	border-radius: 50% 50% 50% 50%;
+	width: 150px;
+	height: 150px;
+	float: left;
+	-webkit-transition: height 0.3s ease-out ;
+	-moz-transition: height 0.3s ease-out ;
+	-o-transition: height 0.3s ease-out ;
+	-transition: height 0.3s ease-out ;
+}
+#update h1{
+	margin: 0 auto;
+	padding: 0;
+	padding-bottom: 5px;
+	color: #BF5841;
+	float: center;
+	position: relative;
+	
+	
+	
+}
+
+#update p{
+	text-align: left;
+	padding:  0 0 0 2em;
+	position: relative;
+	left: 0.6em;
+}
+  
+#update img {
+	border-radius: 50% 50% 50% 50%;
+	border: 2px solid #fff;
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+@-webkit-keyframes myanim{
+	0%{opacity: 0.3;}
+	50%{opacity: 05;}
+	100%{opacity: 1.0;}
+}
+@-moz-keyframes myanim{
+	0%{opacity: 0.3;}
+	50%{opacity: 05;}
+	100%{opacity: 1.0};
+}
+@-o-keyframes myanim{
+	0%{opacity: 0.3;}
+	50%{opacity: 05;}
+	100%{opacity: 1.0;}
+}
+@keyframes myanim{
+	0%{opacity: 0.3;}
+	50%{opacity: 05;}
+	100%{opacity: 1.0;}
+}
+
+

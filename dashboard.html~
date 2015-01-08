@@ -1,0 +1,49 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>DashBoard</title>
+    <link rel="stylesheet" type="text/css" href="dash.css" />
+</head>
+
+<body>
+    <div style="background-color : #5C85FF;  margin: 0; ">
+
+        <div style="background-color : #5C85FF; font-size: 25px;  max-height: 200px; padding:0">
+
+            <h1 style="text-align: center ;color : #FFFFFF ;font-family: tahoma; margin: 0;"> <em><b>Dashboard</b></em></h1>
+        </div>
+
+        <nav id="top-menu">
+            <ul>
+
+                <li> <a href="dashboard.html">Home</a> 
+                </li>
+                <li> <a href="">Add Event</a> 
+                </li>
+                <li> <a href="">Schedule</a> 
+                </li>
+
+                <li> <a href="about.html">About</a> 
+                </li>
+
+                <li> <a href="contact.html">Contact</a> 
+                </li>
+
+                <li> <a href="login.html">Logout</a> 
+                </li>
+
+            </ul>
+
+
+        </nav>
+    </div>
+
+    <div class="circular" style="float: center;">
+        <img src="zain.jpg" alt="here was a img" height="600" width="600" />
+    </div>
+
+</body>
+
+</html>

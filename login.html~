@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!-- THIS is a simple yet intutive login form -->
+<html lang="en ">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="login_style.css" />
+	<link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
+	<script src="lib/sweet-alert.min.js"></script>
+		<script>
+			
+					
+			function mycon(){
+				var user_nm = document.getElementById('user_name').value;
+				var passwd = document.getElementById('passwd').value;
+				if(user_nm == 'root' && passwd == 'root'){
+			swal({   title: "Welcome?",
+				  text: "You have sucessfully loggedIN!",
+				  type: "success",   
+				  showCancelButton: true,
+				  confirmButtonColor: "#66FF66",
+				  confirmButtonText: "OK!",
+				  closeOnConfirm: false },
+				 function(){
+				window.location.href = "dashboard.html";
+					 });
+				
+		}
+		
+			else{
+				
+				return false;
+			}
+			}
+		</script>
+	<script src="select.js"></script>
+
+
+</head>
+
+<body style="background-color : #E1D8B9; ">
+
+    <h1 class="display"> Organise yourself's </h1>
+
+    <h2 class="display1" style="margin: 0;  " id="line"> Login to Customize.</h2>
+
+    <h6 class="display2" style="line-height: 0px; margin: 0;">
+            <p style="font-size: 150%"> <dfn>are you registered member ?</dfn> &nbsp;&nbsp;&nbsp;&nbsp;
+              yes <input type=radio name=reg value=yes   id="my_check"  >  &nbsp;&nbsp;&nbsp;&nbsp;
+              no <input type=radio  name=reg value=no   id="my_check1"> </p>
+        </h6>
+
+    <div id="login" class="footer">
+        <div style="display: block; float : center ; " class="credentials1">
+            <form  method="post"  >
+                <h3 style="text-align: center; color: #FFFFFF"> Login </h3>
+                <p style="color: #fff">Username:
+                    <input id="user_name" type=text name=text1 placeholder="your email_id" required>
+                </p>
+                <p style="color: #fff">Password:
+                    <input id="passwd" type=password name=passwd placeholder="min 8 digit passwd" required>
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type=submit name=login id ="btnlogin" onclick="mycon(); return false;"style="cursor: pointer; font-size: 70%; background-color: #fff ; color: #5C85FF ; border-radius: 55%" >
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+    <div id="register" class="footer">
+        <div style="display: block; float : center   ; " class="credentials1">
+            <form method="post" action="dashboard.html">
+                <h3 style="text-align: center; color: #fff "> Register </h3>
+                <p style="color: #fff">Name:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type=text name=text1 placeholder="your username" required>
+                </p>
+                <p style="color: #fff">Email_id:
+                    <input id="email" type=text name=email placeholder="someone@somewhere.com required ">
+                    <p style="color: #fff">Password:
+                        <input type=password name=passwd placeholder="min 8 digit passwd" required>
+                    </p>
+                   <!-- <p style="color: #fff">Date: &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type=date>
+                    </p> -->
+                    <p style="color: #fff">mobile: &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type=int name='mobile'>
+                    <p style="color: #fff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="register" type=submit name=submit1  style="cursor: pointer; font-size: 70%; background-color:  #fff ; color: #	 ;5C85FF-radius: 55%;">
+
+            </form>
+        </div>
+    </div>
+
+	
+	
+	
+
+	</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+

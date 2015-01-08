@@ -1,0 +1,35 @@
+http://alloyui.com/examples/scheduler/real-world/
+
+http://bootstrap-calendar.azurewebsites.net/index-bs3.html
+
+var pattern = 	/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+
+{
+git clone  {url} -o folderName 
+
+to add changes to git
+ git add .
+ 
+ 
+to add a message to this change
+git commit -m  "this is my commit message"
+
+
+finally apply the changes
+git push repoName branch[master]
+
+
+to show avalible branches
+git branch
+
+to create a new branch
+git branch bootstrap
+
+
+
+to change a branch 
+git checkout  branchToGoIn
+
+}
+ 
+

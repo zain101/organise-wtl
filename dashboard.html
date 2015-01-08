@@ -1,0 +1,144 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>DashBoard</title>
+    <link rel="stylesheet" type="text/css" href="dash.css" />
+	<style>
+			.info_card{
+	background: #5C85FF;
+	float: center;
+	position: relative;			
+	top: 0em;	
+	left: 0.0em;
+	width: 100%;
+	height: 50%;
+	z-index: -1;
+	color: #fff;
+}
+	.info_text p{
+		position: relative;
+		float:center;
+		top: 3em;
+		left: 2em;
+		font-family: tahoma;
+		font-size: 20px;
+		
+	}	
+		.pending  {
+			background: #FFC0C0;
+			float: left;
+			width: 50%;
+			height: 60%;
+			position: relative;
+			top: 1em;
+			color: #CF537C;
+		}
+		.done{
+			background: #B8F1D4;
+			float: right;
+			width: 50%;
+			height: 60%;
+			position: relative;
+			top: 1em;
+			color: #557712;
+		}
+		.inside{
+			position: relative;
+			top: 1em;
+			left: 5em;
+			float: center;
+			font-size: 25px;
+		}
+	</style>
+</head>
+
+<body>
+    <div style="background-color : #5C85FF;  margin: 0; ">
+
+        <div style="background-color : #5C85FF; font-size: 25px;  max-height: 200px; padding:0">
+
+            <h1 style="text-align: center ;color : #FFFFFF ;font-family: tahoma; margin: 0;"> <em><b>Dashboard</b></em></h1>
+        </div>
+
+        <nav id="top-menu">
+            <ul>
+
+                <li> <a href="dashboard.html">Home</a> 
+                </li>
+                <li> <a href="">Add Event</a> 
+                </li>
+                <li> <a href="">Schedule</a> 
+                </li>
+
+                <li> <a href="about.html">About</a> 
+                </li>
+
+                <li> <a href="contact.html">Contact</a> 
+                
+                </li>
+
+				<li> <a href="profile.html"  target="_blank">Profiles</a> 
+				</li>
+                <li> <a href="login.html">Logout</a> 
+                </li>
+
+            </ul>
+
+
+        </nav>
+    </div>
+
+    <div class="circular" style="float: left; width: 25%; height: 30%; position: relative; top : 2em">
+        <img src="zain.jpg" alt="here was a img" height="600" width="600"  style="border: #fff solid 5px;"/>
+    </div>
+	<div id="info" class="info_card" >
+		<div class="info_text">
+			<p> <b>Name </b>: Sayed {Zain}ul Abideen.</p>
+			<p> <b>About</b> : Currently doing computer engineering and have a keen interest in web technologies.</p>
+			<p> <b>Residence</b> : Worli</p>
+			<p><b>Skills</b> : C,JAVA,Python,HTML,CSS,JS {UnderProcess : PHP,Flask}</p>
+			<p style="color : #AC3030;"><b >Status</b> : Selected in e-yantra </p>
+		</div>
+	</div>
+	
+	<div class="pending">
+		<h1 style="text-align: center;">{Pending Tasks}</h1>
+		<div class="inside">
+			<ul>
+			<li>PHP</li>
+				<ul>
+					<li> Sessions</li>
+				</ul>
+			<li>Javascript</li>
+				<ul>
+					<li>Third party calender app</li>
+					<li> Carosle</li>
+				</ul>
+			<li>GoogleMaps</li>
+				<ul>
+					<li> Marker animations</li>
+				</ul>
+
+			</ul>
+	</div>		
+		
+	</div>
+	<div class="done">
+				<h1  style="text-align: center;">{Completed Tasks}</h1>
+		<div class="inside">
+			<ul>
+				<li>Compelling template design</li>
+				<li>Google Maps Integration</li>
+				<li>Javascript implementation</li>
+				<li>AJAX implementation as live search</li>
+				<li>CSS3 animations effects learned{surface level}</li>
+				
+			</ul>
+		</div>
+	</div>
+
+	</body>
+
+</html>
